@@ -1,7 +1,43 @@
-body 
+body {
+    font-family: 'Trebuchet MS';
+}
 
+h1, h2 {
+    text-align: center
+}
 
-main {
+img {
     height: 200px;
-    width: 200px
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+.button1 {
+    border: black, 10px;
+    color: grey;
+    text-align: center;
+    padding: 6px;
+    color: black;
+    margin-top: 50px;
+    margin-right: 50px;
+}   
+
+.button2 {
+    border: black, 10px;
+    color: grey;
+    text-align: center;
+    padding: 6px;
+    color: black;
+    margin-top: 50px;
+    margin-left: 50px;
+}   
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+
 }

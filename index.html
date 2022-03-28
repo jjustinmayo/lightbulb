@@ -5,21 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="lightbulb.css">
 </head>
 <body>
     
-<div>
-    <h1>Hello beautiful people</h1>
-    <h2>It's dark in here, can you please turn on the light</h2>
+<h1 id="title">Hello beautiful people</h1>
+<h2 id="hello">It's dark in here, can you please turn on the light</h2>
 
-</div>
+<table>
+    <tr>
+        <td><button  onclick=changeImageOn(); >Turn on!</button></td>
+        <td><img id="offbulb" src="images/lightbulb OFF.png" ></td>
+        <td><button onclick=changeImageOff(); >Turn off!</button></td> 
+    </tr>
+</table>
 
-<div>
-    <main>
-        <img src="/Users/mac/Projects/lightbulb/images/lightbulb OFF.png">
-    </main>
-   
-</div>
+<script>
+
+
+    function changeImageOn() {
+        document.getElementById("offbulb").src = "images/lightbulb ON.png";
+        if (document.getElementById("offbulb") == "images/lightbulb ON.png") { 
+            document.getElementById("title").innerHTML = "";
+            document.getElementById("hello").innerHTML = "Thanks!";
+        } else {
+            document.getElementById("title");
+            document.getElementById("hello");
+        }
+
+    }   
+
+    function changeImageOff() {
+        document.getElementById("offbulb").src = "images/lightbulb OFF.png";
+
+    }
+
+</script>
 
 </body>
 </html>
